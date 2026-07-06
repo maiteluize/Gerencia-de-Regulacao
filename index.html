@@ -3,10 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portal da Gerência de Regulação</title>
+    <style>
+        /* Estilização Base Clean (Tons de azul institucional e cinza claro) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 1.8rem; }
+        header p { margin: 0.5rem 0 0 0; opacity: 0.9; }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .secao {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .secao h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        /* Estilo da Tabela de Protocolos */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th { background-color: #f8fafc; color: #1e3a8a; font-weight: 600; }
+        tr:hover { background-color: #f8fafc; }
+        
+        /* Botões de Download */
+        .btn-download {
+            background-color: #2563eb;
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .btn-download:hover { background-color: #1d4ed8; }
+        
+        /* Grid de Informações Úteis */
+        .info-cards {
+            display: block;
+        }
+        .card {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .card h3 { margin: 0 0 0.5rem 0; color: #1e3a8a; }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Este é o meu primeiro site hospedado no GitHub Pages.</p>
+
+    <header>
+        <h1>Portal de Diretrizes e Protocolos</h1>
+        <p>Gerência de Regulação — Sistema Municipal de Saúde</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="secao">
+            <h2>Informativo Geral</h2>
+            <p>Bem-vindo ao espaço oficial de consulta interna e externa da Regulação. Aqui você encontra os normativos técnicos vigentes, fluxos de agendamento e os critérios de priorização para exames, consultas especializadas e procedimentos complexos.</p>
+        </div>
+
+        <div class="secao">
+            <h2>Protocolos Clínicos e Manuais de Acesso</h2>
+            <p>Consulte ou faça o download dos arquivos oficiais abaixo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Documento</th>
+                        <th>Versão / Ano</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Protocolo de Regulação para Consultas Especializadas</td>
+                        <td>v2026</td>
+                        <td><a href="DOCUMENTO_LINK_AQUI" class="btn-download" target="_blank">Visualizar / Baixar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Manual de Operação do SISREG III</td>
+                        <td>v2.1</td>
+                        <td><a href="DOCUMENTO_LINK_AQUI" class="btn-download" target="_blank">Visualizar / Baixar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Critérios de Priorização para Exames de Alta Complexidade</td>
+                        <td>v2026</td>
+                        <td><a href="DOCUMENTO_LINK_AQUI" class="btn-download" target="_blank">Visualizar / Baixar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="secao">
+            <h2>Informações Úteis e Canais de Suporte</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>Prazos de Análise</h3>
+                    <p>As solicitações inseridas no sistema de regulação passam por triagem médica e administrativa em um prazo médio de até 72 horas úteis, dependendo do grau de urgência assinalado.</p>
+                </div>
+                <div class="card">
+                    <h3>Contatos da Central</h3>
+                    <p>Para dúvidas sobre fluxos regulatórios ou inconsistências de cadastro no Cartão Nacional de Saúde (CNS), entre em contato pelo ramal interno da Gerência ou pelo e-mail institucional.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gerência de Regulação. Desenvolvido para otimização dos fluxos assistenciais.</p>
+    </footer>
+
 </body>
 </html>
